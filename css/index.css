@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&amp;display=swap');
+
+@font-face {
+  font-family: CircBold;
+  src: url(../res/fonts/Circular-Air-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+html {
+  box-sizing: border-box;
+  background-color: #121212;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  xoutline: 1px solid rgba(255, 0, 0, 0.4);
+}
+
+#page {
+  text-align: center;
+  padding: 20px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  max-width: 1100px;
+  width: 100%;
+  z-index: 3;
+}
+
+.logo {
+  margin: 30px auto;
+  width: calc(450px * 0.8);
+  height: calc(257px * 0.8);
+  background-image: url('../res/img/logo-450.jpg');
+  background-size: 100%;
+}
+
+.hero-text {
+  font-family: 'CircBold';
+  font-size: 38px;
+  margin: 30px auto 50px auto;
+  padding: 0 20px;
+}
+
+#feature-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px auto;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 180%;
+  font-weight: 300;
+}
+
+.feature-panel {
+  width: 100%;
+  max-width: 380px;
+  outline: 1px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 20px;
+  text-align: center;
+  position: relative;
+  background-color: #161616;
+}
+
+.feature-list {
+  margin-top: 30px;
+  min-height: 340px;
+  text-align: left;
+}
+
+a {
+  color: #fff;
+}
+
+.feature-panel a {
+  text-decoration: none;
+}
+
+.feature-header {
+  font-size: 28px;
+  font-family: 'CircBold';
+  margin: 10px auto;
+  text-align: center;
+}
+
+.big-button {
+  background-color: #166efb;
+  border-radius: 28px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  height: 60px;
+  line-height: 60px;
+  width: 60%;
+  margin: 40px auto 20px auto;
+  font-family: 'CircBold';
+  /* position: absolute;
+  bottom: 20px;
+  margin: 0 auto; */
+}
+
+.big-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.big-button:hover {
+  background-color: #4289fc;
+}
+
+.pro-panel {
+  box-shadow: #166efb 0 0 20px;
+  outline: 1px solid #166efb;
+}
+
+/* FOOTER */
+
+#footer {
+  text-align: center;
+  margin: 60px auto 0 auto;
+  width: 80%;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+.hello {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  height: 40px;
+  width: 40px;
+  float: left;
+  opacity: 0.8;
+  margin: 0 10px;
+  background-size: 100% 100%;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+#mail {
+  background-image: url(../res/img/mail-with-circle.svg);
+}
+
+#twitter {
+  background-image: url(../res/img/twitter-with-circle.svg);
+}
+
+#insta {
+  background-image: url(../res/img/instagram-with-circle.svg);
+}
+
+#youtube {
+  background-image: url(../res/img/youtube-with-circle.svg);
+}
+
+#discord {
+  background-image: url(../res/img/discord.svg);
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 860px) {
+  #feature-container {
+    width: 100%;
+    margin: 60px 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .big-button {
+    width: 80%;
+  }
+
+  .hero-text {
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  #page {
+    padding: 20px 10px;
+  }
+
+  .feature-panel {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  .feature-list {
+    min-height: 0;
+  }
+
+  .logo {
+    xmargin: 30px auto;
+  }
+}

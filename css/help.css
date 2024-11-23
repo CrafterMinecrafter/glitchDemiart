@@ -1,0 +1,136 @@
+@font-face {
+  font-family: CircBold;
+  src: url(https://photomosh.com/res/fonts/Circular-Air-Bold.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&amp;display=swap');
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 30px auto;
+  max-width: 1000px;
+  line-height: 1.6em;
+  font-size: 1.2em;
+  color: #ddd;
+  padding: 30px;
+  background-color: #121212;
+  font-weight: 300;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h3 {
+  font-family: 'CircBold';
+  color: #fff;
+}
+
+h2 {
+  border-top: 1px solid #333;
+  padding-top: 30px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: thin solid #aaa;
+}
+
+.help-img {
+  width: 100%;
+  outline: 1px #444 solid;
+  margin: 20px 0 20px 0;
+}
+
+.help-img-lrg {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.help-img-mid {
+  width: 100%;
+  max-width: 650px;
+}
+
+.help-img-sml {
+  width: 100%;
+  max-width: 500px;
+}
+
+.no-frame {
+  outline: none;
+}
+
+/*footer*/
+
+#footer {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 40px;
+}
+
+.hello {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  margin: 40px auto 0 auto;
+}
+
+.social-icon {
+  height: 40px;
+  width: 40px;
+  float: left;
+  opacity: 0.8;
+  margin-right: 20px;
+  background-size: 100% 100%;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+#mail {
+  background-image: url(https://photomosh.com/res/img/mail-with-circle.svg);
+}
+
+#twitter {
+  background-image: url(https://photomosh.com/res/img/twitter-with-circle.svg);
+}
+
+#insta {
+  background-image: url(https://photomosh.com/res/img/instagram-with-circle.svg);
+}
+
+#youtube {
+  background-image: url(https://photomosh.com/res/img/youtube-with-circle.svg);
+}
+
+#discord {
+  background-image: url(https://photomosh.com/res/img/discord.svg);
+}
+
+.hello a {
+  border-bottom: none;
+}
+
+.large {
+  font-size: 1.4em;
+}
+.normal {
+  font-weight: normal;
+  color: #aaa;
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 1em;
+    padding: 15px;
+  }
+}
